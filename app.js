@@ -10,6 +10,7 @@ const eraser = document.querySelector('.eraser');
 btn.addEventListener('click', () => {
   removeGridBox();
   gridSize();
+  isEraser = false;
 })
 
 eraser.addEventListener('click', () => {
