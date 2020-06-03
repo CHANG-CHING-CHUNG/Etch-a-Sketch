@@ -26,14 +26,21 @@ body {
   margin-bottom: 15px;
 }
 
+#btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
 .btn {
   border: none;
-  display: block;
+  display: inline-block;
   text-align: center;
   background-color: #5b5ea6;
   color: #fff;
   width: 100px;
-  margin: auto;
+  margin: 0 20px;
   padding: 10px 30px;
   border-radius: 10px;
   cursor: pointer;
@@ -69,11 +76,23 @@ body {
   padding: 15px;
   border: black 5px solid;
   background-color: #f7cac9;
+  position: relative;
+}
+
+.grid-container:before {
+  content: "";
+  width: 560px;
+  height: 560px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #fff;
 }
 
 .grid-box {
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.0);
   border: black 1px solid;
+  z-index: 1;
 }
 
 .show-color {
